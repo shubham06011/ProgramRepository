@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernet-configuration>
+<session-factory>
+<property name ="hibernet.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernet.connection.url">jdbc:mysql://localhost:3306/jdbc_table</property>
+<property name="hibernet.connection.username">root</property>
+<property name="hibernet.connection.password">rootpassword</property>
+<property name="hibernet.dialect">org.hybernet.dialect.MySQL8Dialect</property>
+
+<property name="hbm2ddl_auto">update</property>
+<property name="show_sql">true</property>
+<mapping class="com.HibernetMaven.Users"></mapping>
+
+
+
+
+
+
+</session-factory>
+</hibernet-configuration>
